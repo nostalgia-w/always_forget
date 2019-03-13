@@ -7,7 +7,7 @@
     仿真文件在[Multisim](https://github.com/nostalgia-w/always_forget/tree/master/2019/0313/Multisim)文件夹下。  
 
     * multisim仿真电路如下：  
-![电路图](.gif)
+![电路图](https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0313/img/Circuit_diagram.png)
 
 2. 仿真过程：打开和关闭switch，观察流经电感的电流和电感两端的电压。  
 
