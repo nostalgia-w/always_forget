@@ -14,4 +14,10 @@
     从曲线可以看出，电感两端电压在接通电源后，会突变到电源电压大小12V，然后逐渐下降为0V。但电流没有突变到12mA,而是缓慢上升，直到达到稳态值（I = 12V/1K = 12mA）。
 
     * Multisim仿真效果如下：  
-![仿真gif](.gif)
+![仿真gif](https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0313/img/Inductance_and_Current_waveform.gif)
+
+参考资料：  
+
+1. [MULTISIM10.0的电流波形查看](http://bbs.elecfans.com/forum.php?mod=viewthread&ordertype=1&tid=283217)  
+
+2. [电感的特性有哪些](http://m.elecfans.com/article/815378.html)
