@@ -16,8 +16,12 @@
     * Multisim仿真效果如下：  
 ![仿真gif](https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0313/img/Inductance_and_Current_waveform.gif)
 
-参考资料：  
+## 参考资料
 
 1. [MULTISIM10.0的电流波形查看](http://bbs.elecfans.com/forum.php?mod=viewthread&ordertype=1&tid=283217)  
 
 2. [电感的特性有哪些](http://m.elecfans.com/article/815378.html)
+
+## Note
+
+1. current clamp的图标中间有个绿色的箭头，表示显示的电流方向，所以如果绿色剪头和实际的电流方向相反，会显示负电流。
