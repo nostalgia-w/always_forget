@@ -55,7 +55,7 @@ Buck-Boost Converter工作波形图：
 
 1. 增加RC电路，电路如下：  
 
-<div align=center><img src = "h" alt = RCC_RC></div>
+<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.jpg" alt = RCC_RC></div>
 
 2. 增加二极管，加速导通。  
 
