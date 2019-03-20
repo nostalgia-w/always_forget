@@ -55,19 +55,19 @@ Buck-Boost Converter工作波形图：
 
 1. 增加RC电路，电路如下：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.jpg" alt = RCC_RC></div>
+<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" alt = RCC_RC></div>
 
 2. 增加二极管，加速导通。  
 
-<div align=center><img src = "h" alt = RCC_RC_D></div>
+<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC_D.png" alt = RCC_RC_D></div>
 
 3. 原边加限压电路。  
 
-<div align=center><img src = "h" alt = RCC_Nb_pressure_limiting></div>
+<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_pressure_limiting.png" alt = RCC_Nb_pressure_limiting></div>
 
 4. RCD钳位电路，可以吸收尖峰。
 
-<div align=center><img src = "h" alt = RCC_RCD></div>
+<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" alt = RCC_RCD></div>
 
 ## NOTE！  
 
