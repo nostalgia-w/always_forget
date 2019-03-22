@@ -91,7 +91,7 @@ Buck-Boost Converter工作波形图：
 
 <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div>
 
-## NOTE！  
+## 注意  
 
 1. RCC电路的不稳定性  
 RCC电路对元件、布线、生产工艺要求较高，使用劣质元件、水准不高的布板、变压器绕制不恰当，都可能导致RCC电路无法工作，或在正常工作一段时间后失效。
