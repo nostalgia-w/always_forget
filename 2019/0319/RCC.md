@@ -8,7 +8,6 @@ RCC电路常用在50W以下输出功率的开关电源上。特点是结构简�
 
 当输入电压不断降低，此时RCC电源的工作频率也在不断的降低，变压器开始产生交流声，比如降低至25KHZ以下，人耳能听见。  
 
-
 ## 2、工作原理  
 
 RCC电路是由Buck-Boost Converter衍生而来。
@@ -37,8 +36,7 @@ Buck-Boost Converter工作波形图：
 
 <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC.png" alt = RCC></div>
 
-### 原理
-
+**原理：**  
 当V<sub>in</sub>提供电压给RCC电路时，经过启动电阻Rs提供电流给Q1的基极，是Q1导通，此时Np线圈有电压，Nb线圈由Np感应出电压，经过电阻Rb给Q1提供较大的电流，使Q1快速进入饱和状态。  
 
 在Q1导通期间，Ns绕组由于极性与Np相反，所以D1不会导通，负载电流由Co提供。
@@ -53,21 +51,38 @@ Buck-Boost Converter工作波形图：
 
 ### 优化  
 
-1. 增加RC电路，电路如下：  
+1. 增加RC电路：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" alt = RCC_RC></div>
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" alt = RCC_RC></div>  
 
-2. 增加二极管，加速导通。  
+    [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和。RC的值决定了三极管Q1的最大导通时间  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC_D.png" alt = RCC_RC_D></div>
+2. 增加二极管：  
 
-3. 原边加限压电路。  
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC_D.png" alt = RCC_RC_D></div>
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_pressure_limiting.png" alt = RCC_Nb_pressure_limiting></div>
+    基极使用电容Cb时，上周期给Cb充电，放电会对下周期有影响，加上二极管后，上周期放电对本周期没有影响。
 
-4. RCD钳位电路，可以吸收尖峰。
+3. 原边加限流电路：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" alt = RCC_RCD></div>
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_current_limiting.png" alt = RCC_Nb_current_limiting></div>
+
+    没有限流电路的时候，三极管Q1导通以后，当Ic = βIb时，Q1截止，但这种限流在实际应用中不准确，因为三极管的β离散性很大，同种型号的三极管β也可能相差4倍。
+    限制Ic的电流。当三极管Q1导通的时候，Ic电流增大，R1上的压降也增大，当三极管Q2的基极电流=V<sub>R1</sub>/R2大于Q2的基极导通电流时，三极管Q2导通，Q1的基极电流从Q2流经置地，使得Q1截止，从而限制Ic电流。
+
+4. 原边加限压电路（次级输出电压）：  
+
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_voltage_limiting.png" alt = RCC_Nb_voltage_limiting></div>
+
+5. RCD钳位电路：
+
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" alt = RCC_RCD></div>
+
+## 抄板
+
+电路图如下：
+
+![Copy_board_circuit_diagram](https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Copy_board_circuit_diagram.png)
 
 ## NOTE！  
 

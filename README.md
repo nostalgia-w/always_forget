@@ -9,6 +9,7 @@ because i always forget to record.
 |--|--|--|--|
 |1|稳压管|2019-03-11|[Zener_diode_multisim](https://github.com/nostalgia-w/always_forget/tree/master/2019/0311/Zener_diode_multisim.md)|
 |2|电感和电流波形|2019-03-13|[Inductance_and_Current_waveform](https://github.com/nostalgia-w/always_forget/blob/master/2019/0313/Inductance_and_Current_waveform.md)|
+|3|RC电流|2019-03-22|[RC_Current](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current/RC_Current.md)
 
 ## 开关电源电路
 
