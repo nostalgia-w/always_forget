@@ -2,15 +2,15 @@
 
 ## 1、简介
 
-RCC电路常用在50W以下输出功率的开关电源上。特点是结构简单，自激式，不需要振荡电路。  
+[RCC](https://zh.wikipedia.org/wiki/振荡线圈变换器)（维基百科链接，有历史由来）电路常用在50W以下输出功率的开关电源上。特点是结构简单，自激式，不需要振荡电路。  
 
-但RCC电源的频率并不固定，会受输入电压和输出电流的影响。当输入电压最低，同时负载电流最大时，此时工作频率最低。  
+<!-- 但RCC电源的频率并不固定，会受输入电压和输出电流的影响。当输入电压最低，同时负载电流最大时，此时工作频率最低。  
 
-当输入电压不断降低，此时RCC电源的工作频率也在不断的降低，变压器开始产生交流声，比如降低至25KHZ以下，人耳能听见。  
+当输入电压不断降低，此时RCC电源的工作频率也在不断的降低，变压器开始产生交流声，比如降低至25KHZ以下，人耳能听见。   -->
 
 ## 2、工作原理  
 
-RCC电路是由Buck-Boost Converter衍生而来。
+RCC电路是由[Buck-Boost Converter](https://zh.wikipedia.org/wiki/降壓-升壓變換器)衍生而来。
 
 Buck-Boost Converter电路图：  
 
@@ -19,6 +19,11 @@ Buck-Boost Converter电路图：
 三极管Q1的基极输入为高电平T<sub>on</sub>时，Q1导通，L1此时为储能，D1不导通，Vo的输出由C<sub>o</sub>维持。  
 
 三极管Q1的基极输入为低电平T<sub>on</sub>时，Q1截止，L1储存的能量释放，此时D1导通，L1释放的能量供给C<sub>o</sub>存储能量和负载RL。  
+
+>Buck-Boost Converter的维基百科中的一张电流标注图：
+
+<div align=center><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Buckboost_operating.svg/1200px-Buckboost_operating.svg.png" width="333" hegiht="313" alt = Buckboost_operating></div>
+
 
 Buck-Boost Converter工作波形图：  
 
@@ -53,36 +58,38 @@ Buck-Boost Converter工作波形图：
 
 1. 增加RC电路：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" alt = RCC_RC></div>  
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" width="500" hegiht="313" alt = RCC_RC></div>  
 
     [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和。RC的值决定了三极管Q1的最大导通时间  
 
 2. 增加二极管：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC_D.png" alt = RCC_RC_D></div>
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC_D.png" width="500" hegiht="313" alt = RCC_RC_D></div>
 
     基极使用电容Cb时，上周期给Cb充电，放电会对下周期有影响，加上二极管后，上周期放电对本周期没有影响。
 
 3. 原边加限流电路：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_current_limiting.png" alt = RCC_Nb_current_limiting></div>
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_current_limiting.png" width="500" hegiht="313" alt = RCC_Nb_current_limiting></div>
 
     没有限流电路的时候，三极管Q1导通以后，当Ic = βIb时，Q1截止，但这种限流在实际应用中不准确，因为三极管的β离散性很大，同种型号的三极管β也可能相差4倍。
     限制Ic的电流。当三极管Q1导通的时候，Ic电流增大，R1上的压降也增大，当三极管Q2的基极电流=V<sub>R1</sub>/R2大于Q2的基极导通电流时，三极管Q2导通，Q1的基极电流从Q2流经置地，使得Q1截止，从而限制Ic电流。
 
 4. 原边加限压电路（次级输出电压）：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_voltage_limiting.png" alt = RCC_Nb_voltage_limiting></div>
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_voltage_limiting.png" width="500" hegiht="313" alt = RCC_Nb_voltage_limiting></div>
 
 5. RCD钳位电路：
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" alt = RCC_RCD></div>
+    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" width="500" alt = RCC_RCD></div>
+
+    消除
 
 ## 抄板
 
 电路图如下：
 
-![Copy_board_circuit_diagram](https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Copy_board_circuit_diagram.png)
+<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div>
 
 ## NOTE！  
 
@@ -101,3 +108,5 @@ RCC最常见的也是做典型的失效现象是主开关管烧毁。
 3. [一种自激式反激变换器的分析和设计](https://github.com/nostalgia-w/always_forget/tree/master/2019/0319/doc) 顾元强，尹斌，吴海新，王先永
 
 4. [再谈RCC电路](http://www.dianyuan.com/bbs/644026.html)
+
+5. [Buck-Boost Converter](https://zh.wikipedia.org/wiki/降壓-升壓變換器) 维基百科
