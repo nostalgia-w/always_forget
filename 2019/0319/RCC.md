@@ -83,7 +83,7 @@ Buck-Boost Converter工作波形图：
 
     <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" width="500" alt = RCC_RCD></div>
 
-    消除
+    消除尖波脉冲。
 
 ## 抄板
 
