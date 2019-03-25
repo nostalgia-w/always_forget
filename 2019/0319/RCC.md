@@ -60,7 +60,11 @@ Buck-Boost Converter工作波形图：
 
     <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" width="500" hegiht="313" alt = RCC_RC></div>  
 
+<<<<<<< HEAD
     [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和。RC的值决定了三极管Q1的最大导通时间  
+=======
+    [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和截止状态，RC的值决定了三极管Q1的最大导通时间。  
+>>>>>>> 62758b3f194def59a1fc6f8e7c331c8712f1059a
 
 2. 增加二极管：  
 
@@ -83,7 +87,7 @@ Buck-Boost Converter工作波形图：
 
     <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" width="500" alt = RCC_RCD></div>
 
-    消除
+    消除尖波脉冲。
 
 ## 抄板
 
@@ -91,7 +95,7 @@ Buck-Boost Converter工作波形图：
 
 <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div>
 
-## NOTE！  
+## 注意  
 
 1. RCC电路的不稳定性  
 RCC电路对元件、布线、生产工艺要求较高，使用劣质元件、水准不高的布板、变压器绕制不恰当，都可能导致RCC电路无法工作，或在正常工作一段时间后失效。
