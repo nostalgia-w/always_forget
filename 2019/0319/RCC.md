@@ -60,11 +60,8 @@ Buck-Boost Converter工作波形图：
 
     <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" width="500" hegiht="313" alt = RCC_RC></div>  
 
-<<<<<<< HEAD
-    [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和。RC的值决定了三极管Q1的最大导通时间  
-=======
-    [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和截止状态，RC的值决定了三极管Q1的最大导通时间。  
->>>>>>> 62758b3f194def59a1fc6f8e7c331c8712f1059a
+    [RC电路的电流](https://github.com/nostalgia-w/always_forget/blob/master/2019/0322/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和截止状态，RC的值决定了三极管Q1的最大导通时间。  
+
 
 2. 增加二极管：  
 
