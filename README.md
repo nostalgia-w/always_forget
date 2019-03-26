@@ -21,5 +21,5 @@ because i always forget to record.
 
 |编号|内容|位置|url|
 |--|--|--|--|
-|1|原理图规范建议|2019-03-20|[](https://github.com/nostalgia-w/always_forget/tree/master/2019/0320/SCH_Specification.md)|
+|1|原理图规范建议|2019-03-20|[SCH_Specification](https://github.com/nostalgia-w/always_forget/tree/master/2019/0320/SCH_Specification.md)|
 |2|元器件图隐藏引脚|2019-03-25|[Hide_Pin](https://github.com/nostalgia-w/always_forget/tree/master/2019/0325/Hide_Pin.md)
