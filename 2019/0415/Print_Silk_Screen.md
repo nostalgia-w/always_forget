@@ -1,4 +1,4 @@
-# Print Silk Screen of Altium Designer
+# Print Silk Screen in Altium Designer
 
 Altium Designer版本：AD 18.1.7
 
