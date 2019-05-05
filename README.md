@@ -26,3 +26,9 @@ because i always forget to record.
 |2|元器件图隐藏引脚|2019-03-25|[Hide_Pin](https://github.com/nostalgia-w/always_forget/tree/master/2019/0325/Hide_Pin.md)
 |3|打印丝印层|2019-04-15|[Printing Silk Screen](https://github.com/nostalgia-w/always_forget/tree/master/2019/0415/Print_Silk_Screen.md)|
 |4|3D封装|2019-04-28|[Place 3D body](https://github.com/nostalgia-w/always_forget/tree/master/2019/0428/Place_3D_body.md)|
+
+## VS code
+
+|编号|内容|位置|url|
+|--|--|--|--|
+|1|c_cpp_configurations|2019-05-05|[c_cpp_configurations](https://github.com/nostalgia-w/always_forget/tree/master/2019/0505/c_cpp_configurations.md)|
