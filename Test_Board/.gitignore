@@ -1,0 +1,4 @@
+*/*
+!*/*.PrjPCB
+!*/*.SchDoc
+!*/*.PcbDoc
