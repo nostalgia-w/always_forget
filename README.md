@@ -27,6 +27,7 @@ because i always forget to record.
 |3|打印丝印层|2019-04-15|[Printing Silk Screen](./2019/0415/Print_Silk_Screen.md)|
 |4|3D封装|2019-04-28|[Place 3D body](./2019/0428/Place_3D_body.md)|
 |5|中文丝印|2019-06-04|[Chinese_Silk_Screen](./2019/0604/Chinese_Silk_Screen.md)
+|6|编译屏蔽|2019-09-06|[Compile_Mask](./2019/0906/Compile_Mask.md)
 
 ## VS code
 
