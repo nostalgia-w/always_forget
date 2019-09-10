@@ -28,6 +28,7 @@ because i always forget to record.
 |4|3D封装|2019-04-28|[Place 3D body](./2019/0428/Place_3D_body.md)|
 |5|中文丝印|2019-06-04|[Chinese_Silk_Screen](./2019/0604/Chinese_Silk_Screen.md)
 |6|编译屏蔽|2019-09-06|[Compile_Mask](./2019/0906/Compile_Mask.md)
+|7|无铜安装孔|2019-09-10|[NPTH](./2019/0906/NPTH.md)
 
 ## VS code
 
