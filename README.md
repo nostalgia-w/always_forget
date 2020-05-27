@@ -42,6 +42,12 @@ because i always forget to record.
 |--|--|--|--|
 |1|Test_Board|2019-06-26|[Test_Board](./Test_Board/Test_Board_PCB.md)|
 
+## excel
+
+|编号|内容|位置|url|
+|--|--|--|--|
+|1|excel_array_formula|2020-05-27|[excel_array_formula](./2020/0527/excel_array_formula.md)|
+
 ## 推荐
 
 |编号|内容|位置|url|
