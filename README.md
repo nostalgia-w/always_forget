@@ -1,7 +1,7 @@
 # ALWAYS_FORGET
 
 why is this named always_forget?  
-because i always forget to record.
+because I always forget to record.
 
 ## Multisim仿真
 
@@ -29,6 +29,7 @@ because i always forget to record.
 |5|中文丝印|2019-06-04|[Chinese_Silk_Screen](./2019/0604/Chinese_Silk_Screen.md)
 |6|编译屏蔽|2019-09-06|[Compile_Mask](./2019/0906/Compile_Mask.md)
 |7|无铜安装孔|2019-09-10|[NPTH](./2019/0910/NPTH.md)
+|8|敷铜连接|2020-06-30|[Polygon_Connect](./2020/0630/Polygon_Connect.md)
 
 ## VS code
 
