@@ -12,9 +12,11 @@ Altium Designer版本：AD 18.1.7
 
 ![Finished_product](./img/Finished_product.png)  
 
-细线的距离要尽量短。  
+>注意：细线的距离要尽量短。  
 
-首先点击顶部工具栏“Tools"--"Preferences"。  
+## 步骤
+
+点击顶部工具栏“Tools"--"Preferences"。  
 
 在“Preferences"框的左边选择"PCB Editor"--"Interactive Routing"，再在右边找到"Automatically Remove Loops"，将勾去掉。  
 
