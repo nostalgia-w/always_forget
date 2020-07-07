@@ -30,6 +30,7 @@ because I always forget to record.
 |6|编译屏蔽|2019-09-06|[Compile_Mask](./2019/0906/Compile_Mask.md)
 |7|无铜安装孔|2019-09-10|[NPTH](./2019/0910/NPTH.md)
 |8|敷铜连接|2020-06-30|[Polygon_Connect](./2020/0630/Polygon_Connect.md)
+|9|小焊盘宽走线|2020-07-07|[Small_Pad_with_Wide_Line](./2020/0707/Small_Pad_with_Wide_Line.md)
 
 ## VS code
 
