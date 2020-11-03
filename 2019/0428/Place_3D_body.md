@@ -33,3 +33,9 @@ Altium Designer版本：AD 18.1.7
   ![no_3D_view](./img/no_3D_view.png)  
   4. 保存。
   
+## 3、不好找的元器件
+
+  1. [1.25mm间距的接线插头](https://www.3dcontentcentral.cn/secure/Download-Partner-Model.aspx?partner=TraceParts&name=W%c3%9cRTH+ELEKTRONIK+-+ELECTROMECHANICAL+COMPONENTS+-+WTB-Wire+to+Board+-+Wire+to+Board+-+1.25+mm+-+PCB&lang=zh&catalogid=10831&id=601662&parturl=https%3a%2f%2fwww.traceparts.com%2fels%2f3dcc%2fgoto%3fProduct%3d10-05032015-067692%26configuratorType%3dtable%26showBomFields%3dtrue%26showSlides%3d3Dviewer%2cPictures%2cDimensionDrawings%2cECAD%26tp_p1%3d%7b1%7d)  
+  ![1_25mm_tangent_line](./img/1_25mm_tangent_line.png)  
+  下拉可以选择不同引脚数。  
+  ![1_25mm_wiring_plugs_with_various_pin_numbers](./img/1_25mm_wiring_plugs_with_various_pin_numbers.png)
