@@ -28,3 +28,9 @@ Altium Designer版本：AD 18.1.7
   2. 打印原理图PDF时，如果不想要输出parameter_set和Blanket，在使用smart PDF时，将其勾去掉。  
 
   ![smart_pdf](./img/smart_pdf.png)  
+
+## 参考  
+
+  [PCB之AD规则设置技巧](https://blog.csdn.net/qq_18628523/article/details/99317668)  
+  [关于AD绘制驱动板如何设置电气间距](https://blog.csdn.net/hurryuptowang/article/details/110306328)  
+  
