@@ -32,6 +32,7 @@ because I always forget to record.
 |8|敷铜连接|2020-06-30|[Polygon_Connect](./2020/0630/Polygon_Connect.md)
 |9|小焊盘宽走线|2020-07-07|[Small_Pad_with_Wide_Line](./2020/0707/Small_Pad_with_Wide_Line.md)
 |10|圆弧走线|2020-11-03|[Routing_Corners](./2020/1103/Routing_Corners.md)
+|11|参数设置|2021-06-01|[Parameter_Set](./2021/0601/Parameter_Set.md)
 
 ## VS code
 
