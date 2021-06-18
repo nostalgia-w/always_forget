@@ -14,7 +14,7 @@ RCC电路是由[Buck-Boost Converter](https://zh.wikipedia.org/wiki/降壓-升�
 
 Buck-Boost Converter电路图：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Buck-Boost_Converter.png" alt = Buck-Boost_Converter></div>
+<div align=center><img src = "./img/Buck-Boost_Converter.png" alt = Buck-Boost_Converter></div>
 
 三极管Q1的基极输入为高电平T<sub>on</sub>时，Q1导通，L1此时为储能，D1不导通，Vo的输出由C<sub>o</sub>维持。  
 
@@ -27,19 +27,19 @@ Buck-Boost Converter电路图：
 
 Buck-Boost Converter工作波形图：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Buck-Boost_Converter_Waveform.png" alt = Buck-Boost_Converter_Waveform></div>
+<div align=center><img src = "./img/Buck-Boost_Converter_Waveform.png" alt = Buck-Boost_Converter_Waveform></div>
 
 若要使V<sub>i</sub>与V<sub>o</sub>之间隔离，可将L1以1:1的方式做成变压器。  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Buck-Boost_Converter_isolation.png" alt = Buck-Boost_Converter_isolation></div>
+<div align=center><img src = "./img/Buck-Boost_Converter_isolation.png" alt = Buck-Boost_Converter_isolation></div>
 
 将Q1放至N<sub>p</sub>的下面，并将N<sub>s</sub>极性反转，D1与Co也跟着极性翻转，此时电路图如下：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Buck-Boost_Converter_Adjustment.png" alt = Buck-Boost_Converter_Adjustment></div>
+<div align=center><img src = "./img/Buck-Boost_Converter_Adjustment.png" alt = Buck-Boost_Converter_Adjustment></div>
 
 在此基础上，若将Q1加上驱动绕组及启动电阻，电路就成为简单的RCC电路，电路图如下：  
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC.png" alt = RCC></div>
+<div align=center><img src = "./img/RCC.png" alt = RCC></div>
 
 **原理：**  
 当V<sub>in</sub>提供电压给RCC电路时，经过启动电阻Rs提供电流给Q1的基极，是Q1导通，此时Np线圈有电压，Nb线圈由Np感应出电压，经过电阻Rb给Q1提供较大的电流，使Q1快速进入饱和状态。  
@@ -58,31 +58,31 @@ Buck-Boost Converter工作波形图：
 
 1. 增加RC电路：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC.png" width="500" hegiht="313" alt = RCC_RC></div>  
+    <div align=center><img src = "./img/RCC_RC.png" width="500" hegiht="313" alt = RCC_RC></div>  
 
     [RC电路的电流](../0322/RC_Current.md)，在次级绕组有电压的时候，会突变到峰值，随后下降，加速三极管进入饱和截止状态，RC的值决定了三极管Q1的最大导通时间。  
 
 
 2. 增加二极管：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RC_D.png" width="500" hegiht="313" alt = RCC_RC_D></div>
+    <div align=center><img src = "./img/RCC_RC_D.png" width="500" hegiht="313" alt = RCC_RC_D></div>
 
     基极使用电容Cb时，上周期给Cb充电，放电会对下周期有影响，加上二极管后，上周期放电对本周期没有影响。
 
 3. 原边加限流电路：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_current_limiting.png" width="500" hegiht="313" alt = RCC_Nb_current_limiting></div>
+    <div align=center><img src = "./img/RCC_Nb_current_limiting.png" width="500" hegiht="313" alt = RCC_Nb_current_limiting></div>
 
     没有限流电路的时候，三极管Q1导通以后，当Ic = βIb时，Q1截止，但这种限流在实际应用中不准确，因为三极管的β离散性很大，同种型号的三极管β也可能相差4倍。
     限制Ic的电流。当三极管Q1导通的时候，Ic电流增大，R1上的压降也增大，当三极管Q2的基极电流=V<sub>R1</sub>/R2大于Q2的基极导通电流时，三极管Q2导通，Q1的基极电流从Q2流经置地，使得Q1截止，从而限制Ic电流。
 
 4. 原边加限压电路（次级输出电压）：  
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_Nb_voltage_limiting.png" width="500" hegiht="313" alt = RCC_Nb_voltage_limiting></div>
+    <div align=center><img src = "./img/RCC_Nb_voltage_limiting.png" width="500" hegiht="313" alt = RCC_Nb_voltage_limiting></div>
 
 5. RCD钳位电路：
 
-    <div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/RCC_RCD.png" width="500" alt = RCC_RCD></div>
+    <div align=center><img src = "./img/RCC_RCD.png" width="500" alt = RCC_RCD></div>
 
     消除尖波脉冲。
 
@@ -90,7 +90,7 @@ Buck-Boost Converter工作波形图：
 
 电路图如下：
 
-<div align=center><img src = "https://raw.githubusercontent.com/nostalgia-w/always_forget/master/2019/0319/img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div>
+<div align=center><img src = "./img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div>
 
 ## 注意  
 
