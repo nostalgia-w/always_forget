@@ -8,7 +8,12 @@ Altium Designer版本：AD 18.1.7
 
 ![Routing_Corners](./img/Routing_Corners.gif)  
 
-在切换的时候，需要将输入法状态切换成美式键盘。
+或者在画线条的第一个点之后，按<kbd>TAB</kbd>，在属性栏`Properties`的`Corner Style`中选择想要的走线模式。  
+
+![Corner_Style](./img/Corner_Style.png)
+
+使用快捷键切换的时候，需要将输入法状态切换成美式键盘。  
+如果没有美式键盘的选项，则在windows的语言设置处添加。  
 
 ![Switch_input_method](./img/Switch_input_method.png)  
 
