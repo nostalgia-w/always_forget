@@ -86,11 +86,11 @@ Buck-Boost Converter工作波形图：
 
     消除尖波脉冲。
 
-## 抄板
+<!-- ## 抄板
 
 电路图如下：
 
-<div align=center><img src = "./img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div>
+<div align=center><img src = "./img/Copy_board_circuit_diagram.png" width="777" alt = Copy_board_circuit_diagram></div> -->
 
 ## 注意  
 
